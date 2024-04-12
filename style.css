@@ -1,0 +1,145 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: lightgreen;
+}
+
+.movieheader{
+    font-size: 15px;
+    
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95%;
+    margin: 1.4rem auto;
+}
+
+.search-btn{
+    outline: none;
+    border: none;
+    padding: .5rem .3rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.search-btn input{
+    outline: none;
+    border: none;
+    padding: .5rem .3rem;
+    font-size: 20px;
+    background-color: lightcyan;
+    border-radius: 5px;
+}
+
+@media screen and(min-width: 750px) {
+    .header{
+        width: 90%;
+        padding: 1rem 0;
+    }
+    .movieheader p{
+        font-size: 1.7rem;
+    }
+    .search-btn input{
+        width: 50vh;
+
+    }
+    .sm-search{
+        display: none;
+    }
+    .search-btn input{
+        padding: .8rem .5rem;
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .header{
+        width: 90%;
+        padding: 1rem 0;
+    }
+    .movieheader p{
+        font-size: 15px;
+    }
+    .search-btn input{
+        width: 50vh;
+    }
+    .sm-search{
+        display: none;
+    }
+    .search-btn input{
+        padding: .8rem .5 rem;
+    }
+}
+
+/*Movie cotainer for mobile screen*/
+.movieContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5rem;
+    padding-bottom: 2rem;
+}
+.movieCard{
+    margin: .5rem 0;
+}
+
+.moviePoster{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+.movieTitle{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: .6rem 0;
+}
+
+.rating{
+    display: flex;
+    justify-content: space-between;
+    color: gray;
+    font-weight: 600;
+}
+
+@media screen and (min-width: 1024px) {
+.movieContainer{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.movieCard{
+    margin: .6rem;
+    width: 200px;
+}
+}
+
+/* footer part */
+
+footer{
+    background-color: gray;
+    font-weight: 600;
+    margin-top: 1rem;
+    padding: 1rem 1.1rem;
+}
+.footerContainer{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (min-width: 1024px){
+    .footerContainer{
+    justify-content: space-around;
+}
+}
